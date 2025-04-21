@@ -1,0 +1,63 @@
+@import url("./reset.css");
+
+/* Mobile-first approach with consistent spacing */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #b3b3b3; /* Gray background */
+    padding: 2.5rem; /* Consistent padding around the entire page */
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Common styles for all main sections with equal spacing */
+.header,
+.main-content,
+.aside,
+.footer {
+    border-radius: 15px;
+    margin-bottom: 1rem; /* Consistent margin between all sections */
+    color: white;
+    width: 100%; /* Ensure full width */
+}
+
+/* Remove margin from the last element */
+.footer {
+    margin-bottom: 2rem;
+}
+
+.header {
+    background-color: #c13b89; /* Purple */
+    padding: 1.15rem; /* Equal padding on all sides */
+    font-size: 1.5rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #00c16e; /* Green */
+    padding: 1rem; /* Equal padding on all sides */
+    gap: 1.5rem; /* Equal spacing between articles */
+}
+
+.article {
+    background-color: #e91e63; /* Pink */
+    padding: 1.6rem; /* Equal padding on all sides */
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.aside {
+    background-color: #0277bd; /* Blue */
+    padding: 1.15rem; /* Equal padding on all sides */
+    font-size: 1.2rem;
+}
+
+.footer {
+    background-color: #e67e22; /* Orange */
+    padding: 1.15rem; /* Equal padding on all sides */
+    font-size: 1.2rem;
+}
