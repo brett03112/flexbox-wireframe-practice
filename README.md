@@ -2,13 +2,14 @@
 
 ## Project Overview
 
-This project demonstrates the implementation of a mobile wireframe layout using CSS Flexbox. It recreates a common mobile application structure with a header, content area, aside section, and footer.
+This project demonstrates the implementation of a responsive wireframe layout using CSS Flexbox. It recreates a common application structure with a header, content area, aside section, and footer that adapts from mobile to desktop layouts.
 
 ## Technologies Used
 
 - HTML5
 - CSS3 (with Flexbox)
 - Mobile-first responsive design
+- Media queries for responsive breakpoints
 
 ## Project Structure
 
@@ -18,6 +19,7 @@ The project consists of the following key files:
 - `css/style.css`: Contains the custom styling with Flexbox implementation
 - `css/reset.css`: Provides a consistent baseline across browsers
 - `mobile-wireframe.png`: The reference design that was implemented
+- `desktop-wireframe.png`: The reference design for a desktop layout using media queries
 
 ## Implementation Details
 
@@ -47,12 +49,24 @@ The layout is specifically designed for mobile devices with:
 - Optimized spacing for smaller screens
 - Non-scalable viewport to prevent unwanted zooming
 
+## Desktop Optimization
+
+The layout adapts to desktop screens (min-width: 768px) with:
+
+- Two-column layout for main content and aside sections
+- Reordered elements using Flexbox order property
+- Proportional widths (68% for main content, 28% for aside)
+- Equal height for main content and aside sections
+- Consistent spacing between all elements
+
 ## Learning Outcomes
 
 This project demonstrates:
 
-- How to structure a mobile layout using semantic HTML
+- How to structure a responsive layout using semantic HTML
 - Effective use of Flexbox for responsive layouts
-- Implementation of a design from a wireframe reference
+- Implementation of a design from wireframe references
 - Consistent spacing and styling across components
 - Mobile-first design principles
+- Using media queries to create responsive breakpoints
+- Adapting layouts for different screen sizes
